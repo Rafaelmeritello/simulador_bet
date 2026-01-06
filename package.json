@@ -1,7 +1,10 @@
 {
   "dependencies": {
     "autoprefixer": "^10.4.20",
+    "next": "^16.1.1",
     "postcss": "^8.5.3",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "recharts": "^2.15.1",
     "tailwindcss": "^4.0.10"
   }
