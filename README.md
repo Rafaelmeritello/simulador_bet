@@ -17,4 +17,7 @@ O simulador permite configurar diferentes cenários de apostas para provar que, 
 - [FontAwesome](https://fontawesome.com/)
 - [Intro.js](https://introjs.com/) (para o tutorial guiado)
 
+
+
+
   IA foi utilizada nesse código para partes repetitivas
