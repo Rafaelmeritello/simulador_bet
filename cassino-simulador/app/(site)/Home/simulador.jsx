@@ -636,7 +636,7 @@ const gerar_grafico = () => {
 <div className="w-full sm:w-4/6 bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center relative">
   
   {/* Titulo */}
-  <h2 className="text-lg font-semibold text-white mb-3">Simulação de Apostas </h2><a href="#" className="text-blue-400" onClick={iniciarTutorial}>Como usar?</a>
+  <h2 className="text-lg font-semibold text-white mb-3">Simulação de Apostas Feito por <a className="text-blue-400" href="https://www.linkedin.com/in/rafael-delmas/">Rafael Delmas</a> </h2><a href="#" className="text-blue-400" onClick={iniciarTutorial}>Como usar?</a>
 
   {/* Container de Configuracao */}
   <div className="w-full flex flex-col items-center space-y-3 mb-4">
