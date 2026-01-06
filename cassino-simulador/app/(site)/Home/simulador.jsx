@@ -221,6 +221,10 @@ function Inicial() {
   };
   
   const adicionarJogador = (saldo_inicial, valor_por_aposta,gale) => {
+    if(saldo_inicial <= 0 || valor_por_aposta <=0){
+       alert("insira um valor válido!");
+    return;
+  }
    if(valor_por_aposta > 500){
     alert("500 é a aposta maxima!");
     return;
@@ -464,7 +468,9 @@ const gerar_grafico = () => {
       multiplicador === undefined ||
       multiplicador === null ||
       multiplicador === '' ||
-      isNaN(parseFloat(multiplicador))
+      isNaN(parseFloat(multiplicador)) ||
+      chance <=0||
+      multiplicador <=0
     ) {
       alert("Escolha a chande e o multiplicador validos!");
       return;
