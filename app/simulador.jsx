@@ -9,11 +9,7 @@ import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import introJs from 'intro.js';
 import 'intro.js/introjs.css'; 
 
-const isBrowser = typeof window !== "undefined";
 
-if (isBrowser) {
-  console.log("Estou no navegador!");
-}
 const iniciarTutorial = () => {
   introJs().setOptions({
     nextLabel: 'Próximo',
@@ -81,16 +77,17 @@ import {
   LinearScale,
   PointElement,
   LineElement,
+  LineController, 
   Title,
   Tooltip,
   Legend,
 } from 'chart.js';
 import { Chart } from 'react-chartjs-2';
-
 // Registrar os componentes necessários do Chart.js (Parte feita com IA)
 ChartJS.register(
   CategoryScale,
   LinearScale,  
+  LineController,
   PointElement,  
   LineElement,  
   Title,        
@@ -223,6 +220,10 @@ function Inicial() {
   const adicionarJogador = (saldo_inicial, valor_por_aposta,gale) => {
     if(saldo_inicial <= 0 || valor_por_aposta <=0){
        alert("insira um valor válido!");
+    return;
+  }
+  if(valor_por_aposta > saldo_inicial){
+    alert("Aposta maior que saldo inicial!");
     return;
   }
    if(valor_por_aposta > 500){
@@ -687,14 +688,11 @@ const gerar_grafico = () => {
       <div className="flex flex-row gap-15">
 
       <a href="#" className="mr-8 bottom-3 left-4 text-blue-400 hover:underline text-sm">
-          Importar modelo de jogo 
+          Importar modelo de jogo (em breve)
         </a>
-            <a href="#" className=" bottom-3 left-4 text-blue-400 hover:underline text-sm">
-          Saiba mais sobre o projeto !
-        </a>
-
+      
         <a href="#" className=" ml-6 bottom-3 left-4 text-blue-400 hover:underline text-sm">
-          Exportar modelo de jogo 
+          Exportar modelo de jogo (em breve)
         </a>
       </div>
 
