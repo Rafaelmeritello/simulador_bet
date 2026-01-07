@@ -218,11 +218,11 @@ function Inicial() {
   };
   
   const adicionarJogador = (saldo_inicial, valor_por_aposta,gale) => {
-    if(saldo_inicial <= 0 || valor_por_aposta <=0){
+    if(parseFloat(saldo_inicial) <= 0 || parseFloat(valor_por_aposta) <=0){
        alert("insira um valor válido!");
     return;
   }
-  if(valor_por_aposta > saldo_inicial){
+  if(parseFloat(valor_por_aposta) > parseFloat(saldo_inicial)){
     alert("Aposta maior que saldo inicial!");
     return;
   }
